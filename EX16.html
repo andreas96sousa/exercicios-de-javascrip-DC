@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-16</title>
+</head>
+<body>
+    <h1>
+        Peça três notas com prompt, calcule a média e diga se o aluno foi aprovado (média ≥ 7). Use Number() e if
+    </h1>
+    <script>
+        let nota1 = Number(prompt("Digite a Nota 01:"))
+        let nota2 = Number(prompt("Digite a Nota 02:"))
+        let nota3 = Number(prompt("Digite a Nota 03:"))
+        let media = (nota1 + nota2 + nota3) / 3
+        if(media >= 7){
+            alert(`Aprovado!`)
+        }else{
+            alert(`Reprovado`)
+
+        }
+    </script>
+</body>
+</html>

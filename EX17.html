@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-17</title>
+</head>
+<body>
+    <h1>
+        Crie um loop com while que peça ao usuário uma senha até ele digitar "1234".
+    </h1>
+    <script>
+        let pass = 1234
+        let senha = ""
+        while(senha != pass){
+            senha = Number(prompt("Digite a senha: "))
+            if(senha == pass){
+                alert("Senha Correta")
+            }else{
+                alert("Senha Incorreta")
+
+            }
+        }
+    </script>
+</body>
+</html>
