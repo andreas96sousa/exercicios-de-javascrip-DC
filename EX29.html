@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-02</title>
+</head>
+<body>
+    <h1>
+        Peça um número e exiba o dobro dele. 
+    </h1>
+    <span>Digite um número:</span><input id="numero" type="number" placeholder="Digite um número"><br>
+    <button onclick="double()">Click Here!</button>
+    <p id="result"></p>
+
+    
+    <script>
+
+        function double(){
+            result.innerHTML = `O dobro do número <b>${numero.value}</b>, é <b>${Number(numero.value)*2}</b>!`
+        }
+    </script>
+</body>
+</html>
