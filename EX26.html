@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-02</title>
+</head>
+<body>
+    <h1>
+        Peça um número e exiba esse número multiplicado por 10. 
+    </h1>
+    <span>Digite um numero:</span><input id="num" type="number" placeholder="Digite um numero"><br> <br>
+    <button onclick="multiplybyten()">Click Here!</button>
+    <p id="result"></p>
+
+    
+    <script>
+
+        function multiplybyten(){
+            result.innerHTML = `A multiplicação de <b>${num.value}</b> e <b>10</b> é <b>${Number(num.value)*10}</b>!`
+        }
+    </script>
+</body>
+</html>

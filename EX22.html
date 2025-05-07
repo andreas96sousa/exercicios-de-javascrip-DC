@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-02</title>
+</head>
+<body>
+    <h1>
+        Solicite o nome do usuário e dê boas-vindas
+    </h1>
+    
+    <span>Digitte seu Nome:</span><input id="nome" type="text" placeholder="Digite seu nome">
+    <button onclick="getname()">Click Here!</button>
+    <p id="result"></p>
+
+    
+    <script>
+
+        function getname(){
+            result.innerHTML = `Seja bem vindo <b>${nome.value}</b>`
+        }
+    </script>
+</body>
+</html>

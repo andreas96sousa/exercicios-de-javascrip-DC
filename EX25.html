@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-02</title>
+</head>
+<body>
+    <h1>
+        Peça dois nomes e exiba ambos juntos. 
+    </h1>
+    <span>Digite um nome:</span><input id="nome1" type="text" placeholder="Digite um nome"> <br>
+    <span>Digite outro nome:</span><input id="nome2" type="text" placeholder="Digite um nome"> <br> <br>
+    <button onclick="getnames()">Click Here!</button>
+    <p id="result"></p>
+
+    
+    <script>
+
+        function getnames(){
+            result.innerHTML = `Sejam bem vindos <b>${nome1.value}</b> e <b>${nome2.value}</b>!`
+        }
+    </script>
+</body>
+</html>

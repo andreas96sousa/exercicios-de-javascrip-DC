@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-02</title>
+</head>
+<body>
+    <h1>
+        Peça um nome e um sobrenome separadamente e exiba o nome completo.
+    </h1>
+    <span>Digite seu nome:</span><input id="nome" type="text" placeholder="Digite seu nome"><br>
+    <span>Digite seu nome:</span><input id="nickname" type="text" placeholder="Digite seu sobrenome"><br> <br>
+    <button onclick="nameandnickname()">Click Here!</button>
+    <p id="result"></p>
+
+    
+    <script>
+
+        function nameandnickname(){
+            result.innerHTML = `Seja bem vindo <b>${nome.value}</b> <b>${nickname.value}</b>!`
+        }
+    </script>
+</body>
+</html>
