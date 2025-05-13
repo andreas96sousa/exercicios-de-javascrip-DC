@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-33</title>
+</head>
+<body>
+    <h1>
+        Peça um número e use while para contar de 0 até esse número.
+    </h1>
+    <span>Digite um número:</span><input id="numero" type="number" placeholder="Digite um número"><br>
+    <button onclick="countwhile()">Click Here!</button>
+    <p id="result"></p>
+
+    
+    <script>
+        function countfor(){
+            result.innerHTML += `Contando de 0 até <b>${numero.value}</b>! <hr>`
+            for(let i = 0; i <= Number(numero.value); i++){
+                result.innerHTML += `Contando... <b>${i}</b> <br>`
+            }
+        }
+            function countwhile(){
+                result.innerHTML += `Contando de 0 até <b>${numero.value}</b>! <hr>`
+                let i = 0
+                while(i <= Number(numero.value)){
+                    result.innerHTML += `Contando... <b>${i}</b> <br>`
+                    i++
+                }
+            }
+        
+    </script>
+</body>
+</html>

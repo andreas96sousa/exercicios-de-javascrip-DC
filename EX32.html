@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-32</title>
+</head>
+<body>
+    <h1>
+        Peça um número e exiba a tabuada dele de 1 a 10 (usando for)
+    </h1>
+    <span>Digite um número:</span><input id="numero" type="number" placeholder="Digite um número"><br>
+    <button onclick="count()">Click Here!</button>
+    <p id="result"></p>
+
+    
+    <script>
+        function count(){
+            result.innerHTML += `Tabuada de <b>${numero.value}</b>! <hr>`
+            for(let i = 1; i <= 10; i++){
+                result.innerHTML += `<b>${i}</b> x <b>${numero.value}</b> = <b>${Number(numero.value)*i}</b>! <br>`
+            }
+        }
+    </script>
+</body>
+</html>
